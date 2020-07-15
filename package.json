@@ -1,0 +1,11 @@
+{
+  "name": "htmlrapier.appmenu",
+  "version": "1.0.0",
+  "dependencies": {
+    "htmlrapier": ">=23.1.0"
+  },
+  "files": [
+    "src/**/*",
+    "tsimport.json"
+  ]
+}
