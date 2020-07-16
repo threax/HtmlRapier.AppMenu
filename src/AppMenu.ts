@@ -23,9 +23,13 @@ export abstract class AppMenuInjector<T extends EntryPoint> {
     public abstract createMenu(entry: T): Generator<AppMenuItem>;
     public abstract getEntryPoint(): Promise<T>;
     public getUserData(accessToken: tm.AccessToken): Promise<UserInfo> {
-        return Promise.resolve({
-            userName: accessToken["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"]
-        });
+        let result: UserInfo = null;
+        if(accessToken){
+            result = {
+                userName: accessToken["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"]
+            };
+        }
+        return Promise.resolve(result);
     }
 }
 
