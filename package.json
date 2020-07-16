@@ -1,8 +1,9 @@
 {
   "name": "htmlrapier.appmenu",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "dependencies": {
-    "htmlrapier": ">=23.1.0"
+    "htmlrapier": ">=24.0.0",
+    "htmlrapier.accesstoken": ">=1.0.0"
   },
   "files": [
     "src/**/*",
