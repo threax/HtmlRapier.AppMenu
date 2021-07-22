@@ -1,9 +1,9 @@
-﻿import * as controller from 'hr.controller';
-import * as loginPopup from 'hr.relogin.LoginPopup';
-import * as safepost from 'hr.safepostmessage';
-import * as iter from 'hr.iterable';
-import * as di from 'hr.di';
-import * as tm from 'hr.accesstoken.manager';
+﻿import * as controller from 'htmlrapier/src/controller';
+import * as loginPopup from 'htmlrapier.relogin/src/LoginPopup';
+import * as safepost from 'htmlrapier/src/safepostmessage';
+import * as iter from 'htmlrapier/src/iterable';
+import * as di from 'htmlrapier/src/di';
+import * as tm from 'htmlrapier.accesstoken/src/manager';
 
 export interface AppMenuItem {
     text: string;

@@ -1,11 +1,4 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "hr.appmenu.*": [
-        "src/*"
-      ]
-    }
-  },
   "include": [
     "src/**/*.ts"
   ]
